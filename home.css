@@ -1,0 +1,204 @@
+*{margin: 0; padding: 0;} 
+@font-face {
+    src:url("fonts/Roboto/Roboto-Bold.ttf");
+    font-family: robotobold; 
+}
+@font-face {
+    src:url("fonts/Roboto/Roboto-Thin.ttf");
+    font-family: robotothin; 
+}
+@font-face {
+    src:url("fonts/Roboto/Roboto-Medium.ttf");
+    font-family: robotomedium; 
+}
+/* ++++++++++++++++++++<LOGO AND MENU>+++++++++++++++++++++ */
+.btn-secondary
+{
+	border-style: none;
+	font-family: robotomedium;
+	
+}
+.nav-left
+{
+	float: left;
+	margin-right: 10%;
+	padding-top: 20px;
+	
+} 
+
+.btn-secondary:hover
+{
+	background-color: #3C8E78;
+	color: black;
+}
+.dropdown-menu
+{
+	background-color: #468a789c;
+}
+.dropdown-item:hover
+{
+	background-color: white;
+}
+.dropdown-item{font-family: robotomedium;}
+.nav-right
+{
+	float: right;
+	margin-right: 5%;
+	padding-top: 20px;
+} 
+
+.navbar-brand 
+{
+	transform: translateX(-50%);
+	left: 50%;
+	position:absolute;
+	padding: 0px;
+}
+.navbar-brand>img
+{
+	height: 100%;
+	width: auto;
+	
+}
+.avatar
+{
+  width: 80x;
+  height: 66px;
+  clip-path: circle(30px at 55% 50%);
+  margin-right: -194px;
+  margin-top: -19px;
+}
+/* ++++++++++++++++++++<SLIDE>+++++++++++++++++++++ */
+.carousel-item
+{
+	opacity: 0.7;
+    position: absolute;
+}
+.carousel-item:hover
+{
+	opacity: 1;
+}
+.slide .carousel-item
+{
+	padding-top: 9px;
+	
+}
+
+.carousel-caption .btn
+{
+	border-radius: 50px;
+	background-color: black;
+	margin-bottom: 10px;
+	color: white;
+	font-family: robotobold;
+	
+}
+.carousel-caption p
+{
+	
+	color: white;
+	background-color: #0000006b;
+	padding: 10px;
+	border-radius: 10px;
+	font-family: robotomedium;
+}
+.carousel-caption h5
+{
+	padding-bottom: 30px;
+	font-size: 50px;
+	color: black;
+	font-family: robotobold;
+}
+
+.tieude h4
+{
+ padding-top: 20px;
+ font-family: robotobold;
+ color: black;
+}
+/* ++++++++++++++++++++<HOUSE>+++++++++++++++++++++ */
+.nhomhinhnha
+{
+	position: relative;
+    perspective: 900px;
+	display: block;
+}
+.img-house
+{
+	padding-top: 43px;
+	width: 100%;
+}
+.hinh-nha-show
+{
+	height: 100%;
+    width: 100%;
+	display: block;
+	position: absolute;
+	z-index: 2;
+	transition: 0.9s;
+    transform: rotateY(0deg); 
+    backface-visibility: hidden ;
+	
+}
+.nhomhinhnha:hover .hinh-nha-show
+{
+     transform: rotateX(90deg); 
+} 
+
+.nhomhinhnha:hover .hinh-nha-an
+{
+	transform: rotateY(0deg); 
+}
+.hinh-nha-an
+{
+  width: 350px;
+  height: 300px;
+  display: block;
+  background-color: #468a789c;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  transition: 0.9s;
+  transform: rotateX(-90deg);
+  backface-visibility: hidden ;
+}
+.hinh-nha-an .text2
+{
+  font-family: robotobold;
+  font-size: 12px;
+  padding-top: 20px;
+
+}
+.hinh-nha-an .text-nho1
+{
+	font-family: robotomedium;
+	font-size: 12px;
+
+}
+.hinh-nha-an .text-nho2
+{
+	font-family: robotomedium;
+	font-size: 12px;
+}
+.hinh-nha-an .text-nho3
+{
+	font-family: robotomedium;
+	font-size: 12px;
+}
+.hinh-nha-an .nut1
+{
+	font-family: robotobold;
+	font-size: 12px;
+	color: white;
+	background-color: black;
+	border-radius: 50px;
+	border: white;
+    margin-top: 50px;
+	margin-left: 110px;
+}
+/* ++++++++++++++++++++<THONG DIEP>+++++++++++++++++++++ */
+.la
+{
+	width: 300px;
+	height: 200px;
+}

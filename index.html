@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <title>HOMEWORK</title>
+</head>
+<body>
+    <div> 
+        <div class="form-box">
+            <h1>Login</h1>
+            <div class="input-box">
+                <i class="far fa-envelope"></i>
+                <input type="email" placeholder="Email Id">
+            </div>
+            <div class="input-box">
+                <i class="fas fa-key"></i>
+                <input type="password" placeholder="Password" id="m-input">
+                <span class="eye" onclick="myFunc()">    
+                    <i id="hidden" class="fas fa-key"></i>
+                    <i id="show" class="fas fa-eye-slash"></i>
+                </span>
+            </div>
+            <!-- <button class="login-btn">
+                Login
+            </button> -->
+            <a  href= "login.html"type="button" class="login-btn" >Login</a>
+
+        </div>
+    </div>
+    <script>
+        function myFunc(){
+            var x = document.getElementById("m-input");
+            var y = document.getElementById("hidden");
+            var z = document.getElementById("show");
+
+            if(x.type === 'password'){
+                x.type = "text";
+                y.style.display = "none";
+                z.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
